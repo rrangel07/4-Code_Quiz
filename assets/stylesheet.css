@@ -1,0 +1,165 @@
+@font-face {
+    font-family: 'Normande';
+    src: url('./fonts/NormandeBT-Roman.woff') format('woff'),
+    url('./fonts/NormandeBT-Roman.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    height: 100%;
+    font-size: 1.5rem;
+    position: relative;
+}
+header{
+    height: 10%;
+}
+
+main{
+    height: auto;
+    /* margin: 40% 20px 50%; */
+}
+
+h1,
+h2,
+h3{
+    font-family: 'Normande', sans-serif;
+    padding:5px
+}
+
+h1{
+    font-size: 2.75rem;
+}
+
+h2{
+    font-size: 2.25rem;
+}
+
+header ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 20px;
+    height: 100%;
+    line-height: 1;
+}
+ul li{
+    text-align: center;
+}
+
+section ul li{
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+input{
+    font-size: inherit;
+}
+
+input[type="text"]{
+    width: 75%;
+    margin: 10px;
+}
+
+table,
+th,
+td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+#high-scores{
+    margin: 25px auto;
+
+}
+
+#vw-high{
+    padding: 10px;
+}
+
+#state-0,
+#state-1,
+#state-2,
+#state-3{
+    text-align: center;
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.flex-container-centered{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#button-start,
+#button-submit,
+#button-goback,
+#button-clear,
+#button-next{
+    padding: 0px 10px;
+    margin: 10px 0;
+}
+
+.hide{
+    display: none;
+}
+
+.correct{
+    background-color: greenyellow;
+}
+
+.incorrect{
+    background-color: red;
+}
+
+tr:nth-child(even){
+    background-color: pink;
+}
+
+@media screen and (min-width: 768px){
+    body{
+        margin: 0 15%;
+        font-size: 2.25rem;
+        line-height: 1.5;
+    }
+
+    main{
+        height: auto;
+        margin:20px;
+    }
+    h1{
+        font-size: 3.75rem;
+    }
+    
+    h2{
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+
+    section ul li{
+        padding: 10px;
+        border-radius: 20px;
+        margin: 10px;
+    }
+    #state-0,
+    #state-1,
+    #state-2,
+    #state-3{
+    padding: 0 10%;
+    }
+    th,td{
+        padding: 0 35px;
+    }
+}

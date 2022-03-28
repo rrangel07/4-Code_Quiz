@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./assets/reset.css">
+    <link rel="stylesheet" type="text/css" href="./assets/stylesheet.css">
+</head>
+<body>
+<!-- Header includes a button with access to the high scores (state-3) and on the other edge the timer -->
+    <header id="header">
+        <ul>
+            <li id="vw-high"> View<br>Highscores</li>
+            <li class="timer">60</li>
+        </ul>
+    </header>
+
+<main class="flex-container-centered">
+
+    <section id="state-0">
+        <h1>Sex and the city Quiz</h1>
+        <p>Are you ready to try your knowledge about this four ladies trying to conquer the concrete jungle while juggling men and a career?</p>
+        <button id="button-start">Start</button>
+    </section>
+
+     <section id="state-1" class="hide">
+        <h2 id="question">When did I hate Carrie the most?</h2>
+        <ul id= 'answers'>
+            <li>When she cheated on Aiden with Big</li>
+            <li>When she dumped Aiden for the 2nd time</li>
+            <li>All of the above</li>
+            <li>When she didn't call 911 during big's heart attack</li>
+        </ul>
+        <button id="button-next">Next</button>
+    </section>
+
+   <section id="state-2" class="hide">
+       <h2>Record your score</h2>
+        <form>
+            <label for="initials">Enter initials:</label>
+            <input type="text" id="initials" name="intials" placeholder="JP" class="form-style" ><br>
+            <p id="score">Your final score is</p>
+            <input type="submit" id="button-submit" value="Submit">
+        </form>
+    </section>
+
+    <section id="state-3" class="hide">
+        <h2>That's all folks</h2>
+        <table id="high-scores">
+            <tr>
+              <th>Initials</th>
+              <th>Score</th>
+            </tr>
+            <tr>
+                <td>jp</th>
+                <td>50</th>
+            </tr>
+          </table>
+          <button id="button-goback">Go Back</button>
+          <button id="button-clear"> Clear Scores</button>
+    </section>
+    <script src="./assets/script.js"></script>
+</main>
+</body>
+</html>

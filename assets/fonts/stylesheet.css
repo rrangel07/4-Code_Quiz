@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Normande';
+    src: url('NormandeBT-Roman.woff') format('woff'),
+        url('NormandeBT-Roman.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
