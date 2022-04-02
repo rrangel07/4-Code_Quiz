@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="./assets/reset.css">
-    <link rel="stylesheet" type="text/css" href="./assets/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="./assets/fonts/fonts.css">
 </head>
 <body>
 <!-- Header includes a button with access to the high scores (state-3) and on the other edge the timer -->
@@ -33,7 +34,7 @@
             <li>All of the above</li>
             <li>When she didn't call 911 during big's heart attack</li>
         </ul>
-        <button id="button-next">Next</button>
+        <p id="result" class="hide">Correct</p>
     </section>
 
    <section id="state-2" class="hide">
@@ -41,7 +42,7 @@
         <form>
             <label for="initials">Enter initials:</label>
             <input type="text" id="initials" name="intials" placeholder="JP" class="form-style" ><br>
-            <p id="score">Your final score is</p>
+            <p>Your final score is <span id="score"></span></p>
             <input type="submit" id="button-submit" value="Submit">
         </form>
     </section>
@@ -49,19 +50,20 @@
     <section id="state-3" class="hide">
         <h2>That's all folks</h2>
         <table id="high-scores">
-            <tr>
-              <th>Initials</th>
-              <th>Score</th>
-            </tr>
-            <tr>
-                <td>jp</th>
-                <td>50</th>
-            </tr>
-          </table>
+            <thead>
+                <tr>
+                <th>Initials</th>
+                <th>Score</th>
+                </tr>
+            </thead>
+            <tbody id="tbody-score">
+
+            </tbody>
+        </table>
           <button id="button-goback">Go Back</button>
           <button id="button-clear"> Clear Scores</button>
     </section>
-    <script src="./assets/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 </main>
 </body>
 </html>
